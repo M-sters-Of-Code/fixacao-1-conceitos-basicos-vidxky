@@ -9,4 +9,50 @@
  * - A classe CalculaAluguelCarro deve ter um método estático chamado Calcular que recebe um int dias, um int quilometragemInicial, um int quilometragemFinal e retorna o valor total do aluguel
  */
 //Primeira tarefa realizada
-Console.WriteLine("Hi");
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FixacaoConceitosBasicos1.Model
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Escolha uma opção:");
+            Console.WriteLine("1 - Converter Metros para Milímetros");
+            Console.WriteLine("2 - Calcular Aumento");
+            Console.WriteLine("3 - Calcular Desconto");
+            Console.WriteLine("4 - Calcular Aluguel do Carro");
+            Console.Write("Opção: ");
+
+            int opcao = Convert.ToInt32(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    MetrosMilimetros.Executar();
+                    break;
+                case 2:
+                    CalculaAumento.Executar();
+                    break;
+                case 3:
+                    CalculaDesconto.Executar();
+                    break;
+                case 4:
+                    AluguelCarro.Executar();
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida!");
+                    break;
+            }
+
+            Console.WriteLine("\nPressione Enter para sair...");
+            Console.ReadLine();
+        }
+    }
+}
+

@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace FixacaoConceitosBasicos1.Model
 {
-    internal class MetrosMilimetros
+    class MetrosMilimetros
     {
-       namespace Model
-    {
-        public static class MetrosMilimetros
+        public static void Executar()
         {
-            public static double Converter(double metros)
-            {
-                return metros * 1000;
-            }
+            Console.Write("Digite um valor em metros: ");
+            double metros = Convert.ToDouble(Console.ReadLine());
+
+            double milimetros = metros * 1000;
+
+            Console.WriteLine($"{metros} metros equivalem a {milimetros} milímetros.");
         }
     }
-
-}
 }

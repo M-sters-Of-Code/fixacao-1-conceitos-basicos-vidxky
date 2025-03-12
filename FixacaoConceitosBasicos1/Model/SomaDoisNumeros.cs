@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace FixacaoConceitosBasicos1.Model
 {
-    public class SomaDoisNumeros
-    {
-        public static int Somar(int num1,  int num2)
+        class SomaDoisNumeros
         {
-            return num1 + num2;
+            public static int Somar(int num1, int num2)
+            {
+                return num1 + num2;
+            }
         }
     }
-}
+
